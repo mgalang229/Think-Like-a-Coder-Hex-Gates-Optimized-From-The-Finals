@@ -38,14 +38,14 @@ void test_case() {
 	bool p[17];
 	memset(p, false, sizeof(p));
 	for(int i = 0; i < h; ++i) {
-        ns += unlock[i];
-        hexToBinary();
-        int b[1000], id=0;
-        memset(b, 0, sizeof(b));
-        reverse(s.begin(), s.end());
-        for(int j=0; j < (int) s.size(); ++j) {
-            if(s[j] == '1') b[id+1]++;
-            id++;
+		ns += unlock[i];
+		hexToBinary();
+		int b[1000], id=0;
+		memset(b, 0, sizeof(b));
+		reverse(s.begin(), s.end());
+		for(int j=0; j < (int) s.size(); ++j) {
+		    if(s[j] == '1') b[id+1]++;
+		    id++;
         }
         int cnt2 = 0;
         for(int j = 0; j <= id; ++j) {
@@ -60,23 +60,23 @@ void test_case() {
 	}
 	cout << "\n";
 	for(int i = 0; i < l; ++i) {
-        ns += lock[i];
-        hexToBinary();
-        int b[1000], id = 0;
-        memset(b, 0, sizeof(b));
-        reverse(s.begin(), s.end());
-        for(int j = 0; j < (int) s.size(); ++j) {
-            if(s[j] == '1') b[id+1]++;
-            id++;
-        }
-        int cnt2 = 0;
-        for(int j = 0; j <= id; ++j) {
-            if(b[j] == 1) p[cnt2] = false;
-            cnt2++;
-        }
-        ns = s = "";
-    }
-    for(int i = 1; i < 17; ++i) {
+		ns += lock[i];
+		hexToBinary();
+		int b[1000], id = 0;
+		memset(b, 0, sizeof(b));
+		reverse(s.begin(), s.end());
+		for(int j = 0; j < (int) s.size(); ++j) {
+		    if(s[j] == '1') b[id+1]++;
+		    id++;
+		}
+		int cnt2 = 0;
+		for(int j = 0; j <= id; ++j) {
+		    if(b[j] == 1) p[cnt2] = false;
+		    cnt2++;
+		}
+		ns = s = "";
+    	}
+	for(int i = 1; i < 17; ++i) {
 		if(i < 10) {
 			if(p[i] && i < 10) cout << "DOOR 0" << i << ": true";
 			else cout << "DOOR 0" << i << ": false";
