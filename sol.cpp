@@ -46,13 +46,13 @@ void test_case() {
 		for(int j=0; j < (int) s.size(); ++j) {
 		    if(s[j] == '1') b[id+1]++;
 		    id++;
-        }
-        int cnt2 = 0;
-        for(int j = 0; j <= id; ++j) {
-            if(b[j] == 1) p[cnt2] = true;
-            cnt2++;
-        }
-        ns = s = "";
+        	}
+		int cnt2 = 0;
+		for(int j = 0; j <= id; ++j) {
+		    if(b[j] == 1) p[cnt2] = true;
+		    cnt2++;
+        	}
+        	ns = s = "";
 	}
 	cout << "BULBS: ";
 	for(int i = 0; i < 17; ++i) {
