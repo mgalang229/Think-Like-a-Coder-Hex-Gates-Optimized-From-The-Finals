@@ -16,12 +16,12 @@ void hexToBinary() {
 		else if(ns[j] == '7') s += "0111";
 		else if(ns[j] == '8') s += "1000";
 		else if(ns[j] == '9') s += "1001";
-		else if(ns[j] == 'A'||ns[j]=='a') s += "1010";
-		else if(ns[j] == 'B'||ns[j]=='b') s += "1011";
-		else if(ns[j] == 'C'||ns[j]=='c') s += "1100";
-		else if(ns[j] == 'D'||ns[j]=='d') s += "1101";
-		else if(ns[j] == 'E'||ns[j]=='e') s += "1110";
-		else if(ns[j] == 'F'||ns[j]=='f') s += "1111";
+		else if(ns[j] == 'A' || ns[j]=='a') s += "1010";
+		else if(ns[j] == 'B' || ns[j]=='b') s += "1011";
+		else if(ns[j] == 'C' || ns[j]=='c') s += "1100";
+		else if(ns[j] == 'D' || ns[j]=='d') s += "1101";
+		else if(ns[j] == 'E' || ns[j]=='e') s += "1110";
+		else if(ns[j] == 'F' || ns[j]=='f') s += "1111";
 	}
 }
 
